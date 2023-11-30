@@ -1,0 +1,291 @@
+#cabecera {
+    position: absolute;
+    background-color: #763626; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom, #763626 30%, #505160 70%,#2a3132 95%);
+    color: #c4dfe6;
+    height: 105%;
+    top: 0%;
+    left: 0%;
+    right: 80%;
+    bottom: 0%;
+}
+#titulo {
+    position: absolute;
+    bottom: 40%;
+    left: 5.5%;
+    font-family: 'Teko', sans-serif;
+    font-size: 30px;
+    color: rgba(50, 95, 115, 0.8);
+    line-height: 50vh;
+    font-size: 3.5rem;
+    padding: 25px;
+    z-index: 1000;
+}
+#titulo2 {
+    position: absolute;
+    left: 0%;
+    width: 60%;
+    height: 60%;
+    color: white;
+}
+h1:hover{
+    color: #a1d6e2;
+    text-shadow:0 0 15px #fff,
+    0 0 40px #fff,
+    0 0 40px #fff,
+    0 0 100px #fff;
+    z-index: 1000;
+}
+h2 {
+    position: absolute;
+    bottom:35%;
+    left: 20%;
+    color: rgba(50, 95, 115, 0.8);
+    font-family: 'Teko', sans-serif;
+    font-size: 4em;
+}
+h2::before {
+    content: attr(data-text);
+    position: absolute;
+    color: #d7eaf2;
+    width: 350px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid #c4dfe6;
+    animation: animate1 8s linear infinite;
+    filter: drop-shadow(0 0 20px #fff) drop-shadow(0 0 50px #fff);
+}
+@keyframes animate1 {
+    0%,10%,100%
+    {
+        width: 0;
+    }
+    70%,90%{
+        width: 97%;
+    }
+}
+#contpadre {
+    position: relative;
+    left: 10%;
+    top: 20%;
+    z-index: 1000;
+}
+.camacho {
+    position: absolute;
+}
+#portafolio {
+    position: absolute;
+    top: 100px;
+}
+#contacto {
+    position: absolute;
+    top: 400px;
+}
+#ventanacamacho {
+    background-color: rgba(51, 107, 135, 0.5);
+    width: 55%;
+    color: #c4dfe6;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 35px;
+    min-height: 450px;
+    border-radius: 20px;
+    position: absolute;
+    display: none;
+}
+#cerrarventanacamacho {
+    color: #c4dfe6;
+    position: absolute;
+    width: 10%;
+    bottom: 82%;
+    right: 85%;
+}
+.ventanaportafolio {
+    background-color: rgba(51, 107, 135, 0.5);
+    width: 55%;
+    color: #c4dfe6;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 35px;
+    min-height: 450px;
+    border-radius: 20px;
+    position: absolute;
+    display: none;
+}
+#cerrarventanaportafolio {
+    position: absolute;
+    color: #c4dfe6;
+    width: 10%;
+    bottom: 82%;
+    right: 85%;
+}
+.button {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: #c4dfe6;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #c4dfe6;
+    border: 2px solid gray;
+}
+.a {
+    text-decoration: none; /* Quitar el subrayado */
+    color: #c4dfe6; /* Cambiar el color del texto del enlace */
+}
+.banner {
+    position: relative;
+    width: 96.86%;
+    height: 100vh;
+    background-size: cover;
+    background-position: top;
+}
+.banner #cloud 
+{
+    position: absolute;
+    width: 123.5%;
+    bottom: 55%;
+    height: 100%;
+    right: -13.3%;
+    overflow: hidden;
+}
+.banner #cloud img
+{
+    position: absolute;
+    bottom: 0;
+    max-width: 400%;
+    animation: animate2 calc(20s * var(--i)) linear infinite;
+    opacity: 0.35;
+}
+@keyframes animate2
+{
+    0%
+    {
+        transform: translateX(-100%);
+    }
+    100%
+    {
+        transform: translateX(100%);
+    }
+}
+section {
+    position: absolute;
+    padding: 75px 100px;
+}
+#cuerpo {
+    position: absolute;
+    background-color: #90afc5;
+    background-image: linear-gradient(to bottom, #c4dfe6 5%,#90afc5 25%,#336b87 60%,#2a3132 95%);
+    top: 0%;
+    bottom: 0%;
+    height: 85.3%;
+    right: 0%;
+    width: 67.1%;
+    left: 19.76%;
+}
+footer {
+    position: absolute;
+    background-color: rgba(42, 49, 50, 1);
+    background-image: linear-gradient(to bottom,#2a3132, );
+    padding: 10px;
+    bottom: -12%;
+    left: 0%;
+    width: 98.7%;
+    height: 40px;
+    z-index: 1000;
+}
+#redes {
+    position: absolute;
+    left: 20%;
+}
+#datos {
+    display: none;
+}
+.salida {
+    position: absolute;
+    color: #c4dfe6;
+    height: 30px;
+    left: -350px;
+}
+#contcontac {
+    position: absolute;
+    bottom: 5%;
+    width: 98.5%;
+    height: 100%;
+}
+#degrate {
+    position: absolute;
+    background-color: rgba(42, 49, 50, 1);
+    left: 0%;
+    height: 60px;
+    width: 100%;
+    bottom: -12%;
+}
+#correo {
+    position: absolute;
+    bottom: 0%;
+    left: 25%;
+}
+#insta {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+}
+#text {
+    position: absolute;
+    top: 24%;
+    left: 12%;
+    font-size: 3.5rem;
+    font-family: 'Teko', sans-serif;
+}
+#text2 {
+    position: absolute;
+    top: 24%;
+    left: 59%;
+    font-size: 3.5rem;
+    font-family: 'Teko', sans-serif;
+}
+#text3 {
+    position: absolute;
+    top: 42%;
+    left: 12%;
+    font-size: 3.5rem;
+    font-family: 'Teko', sans-serif;
+}
+#text4 {
+    position: absolute;
+    top: 50%;
+    left: 13%;
+    font-size: 3.5rem;
+    font-family: 'Teko', sans-serif;
+}
+#iconinsta {
+    position: absolute;
+    color: #a1d6e2;
+    bottom: 10%;
+    left: 46%;
+    width: 50px;
+}
+#icongmail {
+    position: absolute;
+    color: #a1d6e2;
+    bottom: 10%;
+    left: 21%;
+    width: 50px;
+}
+#copy {
+    color: #a1d6e2;
+    position: absolute;
+    bottom: 0%;
+    left: 40%;
+    font-size: 30px;
+    opacity: 0.8;
+}
